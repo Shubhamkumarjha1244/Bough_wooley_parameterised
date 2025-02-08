@@ -18,13 +18,15 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
+//block tested
 module fa(innA,innB,carry_in,sum,carry_out);
     input innA,innB,carry_in;
     output sum,carry_out;
     
     assign {carry_out,sum}=innA+innB+carry_in;
 endmodule
-
+ 
+//block tested
 module adder_block(vertical_inn,horizontal_inn,carry_in,sum,carry_out);
     parameter size=4;
     input[size-2:0] vertical_inn;
@@ -74,9 +76,49 @@ module and_block(arr,inn,out);
     endgenerate       
 endmodule
     
-//module woogh_boogly(input1,input2,product);
-//    parameter size=4;
-//    input[size-1:0] input1,input2;
-//    output[size-1:0] product;
+module woogh_boogly(input1,input2,product);
+    parameter size=4;
+    input[size-1:0] input1,input2;
+    output[(2*size)-1:0] product;
+    wire[size-1:0] first_vertical_inn;
+    wire[size-2:0] first_horizontal_inn;
+    wire[size-2:0] first_carry_in;
     
-//endmodule
+    wire [size-2:0] sum [size-3:0];
+    wire[size-2:0] carry [size-3:0];
+
+    
+
+    
+
+    
+    
+    //first row (tested)
+    and_block and_v_1(input1[size-2:0],input2[0],first_vertical_inn[size-2:0]);
+    assign first_vertical_inn[size-1]=~(input1[size-1]&input2[0]);
+    
+    and_block and_h_1(input1[size-2:0],input2[1],first_horizontal_inn);
+    
+    adder_block add1(first_vertical_inn[size-1:1],first_horizontal_inn,3'b000,sum[0],carry[0]);
+    assign product[0]=first_vertical_inn[0];
+    assign product[1]=sum[0][0];
+    
+    
+    
+    //generate block
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+endmodule

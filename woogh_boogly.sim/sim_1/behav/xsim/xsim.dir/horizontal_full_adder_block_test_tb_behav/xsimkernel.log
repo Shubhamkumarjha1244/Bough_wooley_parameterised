@@ -1,0 +1,7 @@
+Running: xsim.dir/horizontal_full_adder_block_test_tb_behav/xsimk.exe -simmode gui -wdb horizontal_full_adder_block_test_tb_behav.wdb -simrunnum 0 -socket 52689
+Design successfully loaded
+Design Loading Memory Usage: 8912 KB (Peak: 8912 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9616 KB (Peak: 9616 KB)
+Simulation CPU Usage: 733 ms

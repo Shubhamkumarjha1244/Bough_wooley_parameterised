@@ -4,4 +4,5 @@ May 27 2020
 20:09:33
 C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
 C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.srcs/sim_1/new/block_test_tb.v,1739019755,verilog,,,,horizontal_full_adder_block_test_tb,,,,,,,,
-C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.srcs/sources_1/new/woogh_boogly.v,1739019473,verilog,,C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.srcs/sim_1/new/block_test_tb.v,,adder_block;and_block;fa;nand_block,,,,,,,,
+C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.srcs/sim_1/new/bough_wooley_tb.v,1739031005,verilog,,,,bough_wooley_tb,,,,,,,,
+C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.srcs/sources_1/new/woogh_boogly.v,1739031136,verilog,,C:/Users/SHUBHAM_KUMAR_JHA/Desktop/HPCES Lab/woogh_boogly/woogh_boogly.srcs/sim_1/new/bough_wooley_tb.v,,adder_block;and_block;fa;nand_block;woogh_boogly,,,,,,,,
