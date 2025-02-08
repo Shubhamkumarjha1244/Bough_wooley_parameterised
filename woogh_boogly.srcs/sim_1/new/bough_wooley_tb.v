@@ -27,7 +27,7 @@ module bough_wooley_tb();
     woogh_boogly dut(input1,input2,product);
     initial
         begin
-            input1=9;
-            input2=2;
+            input1=8;
+            input2=3;
         end
 endmodule
