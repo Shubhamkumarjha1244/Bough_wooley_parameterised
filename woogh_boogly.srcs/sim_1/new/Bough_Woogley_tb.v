@@ -1,23 +1,26 @@
 
 module bough_wooley_tb();
-    parameter size=32;
+    parameter size=32; //size of multiplier and multiplicant
     
-    reg[size-1:0] input1,input2;
-    wire [(2*size)-1:0] product;
-    woogh_boogly dut(input1,input2,product);
+    reg[size-1:0] input1,input2; //multiplier and multiplicant
+    wire [(2*size)-1:0] product; //product output
+    
+    woogh_boogly dut(input1,input2,product); //intialization
+    
+    //test cases
     initial
         begin
-            input1=8;
-            input2=3;
+            input1=32'h2411ee22;
+            input2=32'h2411ee13;
             #10
-            input1=-2;
-            input2=-3;
+            input1=-25061997;
+            input2=-24061997;
             #10
-            input1=4;
-            input2=3;
+            input1=-(32'h2411ee05);
+            input2=32'h2411ee12;
             #10
             input1=25061997;
-            input2=-22071996;
+            input2=-22071997;
             #10
             $finish;
         end
@@ -26,9 +29,9 @@ endmodule
     
 //module last_block_tb();
 
-//    parameter size=4;
+//    parameter size=32; //size of multiplier and multiplicant
 //    reg [size-3:0] sum_in;
-//    reg [size-2:0] carry_in;
+//    reg [size-2:0] carry_in; 
 //    reg x,y;
 //    wire [size-1:0] out;
 //    last_fa dut(sum_in,carry_in,x,y,out);
@@ -45,7 +48,7 @@ endmodule
 
 
 //module block_test_tb();
-//parameter size=8;
+//parameter size=32; //size of multiplier and multiplicant
 //reg[size-1:0] arr;
 //reg inn;
 //wire[size-1:0] out;
@@ -66,7 +69,7 @@ endmodule
 
 
 //module horizontal_full_adder_block_test_tb();
-//    parameter size=31;
+//    parameter size=32; //size of multiplier and multiplicant
 //    reg[size-1:0] vertical_inn,horizontal_inn,carry_in;
 //    wire[size-1:0] sum,carry_out;
     
